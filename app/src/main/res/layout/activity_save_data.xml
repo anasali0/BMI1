@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaveData"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:text="Hi, Anas"
+        android:textSize="30sp"
+        tools:ignore="InvalidId"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Current Status"
+            android:textColor="@color/skyBlue"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <Spinner
+            android:id="@+id/current_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Old Status"
+        android:textStyle="bold"
+        android:textColor="@color/skyBlue"
+        android:textSize="20sp"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="2.1in"
+        android:orientation="vertical"
+        android:background="@color/skyBlue"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/white"
+            android:gravity="center">
+            <TableRow>
+                <TextView
+                    android:text="20/1/2020"
+                    android:gravity="center"
+                    android:padding="5dip"
+                    />
+                <TextView
+                    android:text="60Kg"
+                    android:gravity="center"
+                    android:padding="5dip"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Normal"
+                    android:padding="5dip"
+                    android:gravity="center"/>
+                <TextView
+                    android:text="170cm"
+                    android:gravity="center"
+                    android:padding="5dip" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/white"
+            android:gravity="center">
+            <TableRow>
+                <TextView
+                    android:text="20/1/2020"
+                    android:gravity="center"
+                    android:padding="5dip"
+                    />
+                <TextView
+                    android:text="60Kg"
+                    android:gravity="center"
+                    android:padding="5dip"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Normal"
+                    android:padding="5dip"
+                    android:gravity="center"/>
+                <TextView
+                    android:text="170cm"
+                    android:gravity="center"
+                    android:padding="5dip" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/white"
+            android:gravity="center">
+            <TableRow>
+                <TextView
+                    android:text="20/1/2020"
+                    android:gravity="center"
+                    android:padding="5dip"
+                    />
+                <TextView
+                    android:text="60Kg"
+                    android:gravity="center"
+                    android:padding="5dip"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Normal"
+                    android:padding="5dip"
+                    android:gravity="center"/>
+                <TextView
+                    android:text="170cm"
+                    android:gravity="center"
+                    android:padding="5dip" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white"
+            android:gravity="center">
+            <TableRow>
+                <TextView
+                    android:text="20/1/2020"
+                    android:gravity="center"
+                    android:padding="5dip"
+                    />
+                <TextView
+                    android:text="60Kg"
+                    android:gravity="center"
+                    android:padding="5dip"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Normal"
+                    android:padding="5dip"
+                    android:gravity="center"/>
+                <TextView
+                    android:text="170cm"
+                    android:gravity="center"
+                    android:padding="5dip" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Add Food"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Add Record"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Food"
+        android:textSize="20sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_gravity="center"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:paddingRight="20dp"/>
+
+</LinearLayout>
