@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "481104954711",
+    "firebase_url": "https://bmi-analysis-default-rtdb.firebaseio.com",
+    "project_id": "bmi-analysis",
+    "storage_bucket": "bmi-analysis.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:481104954711:android:b14c39872cd23accd0aa12",
+        "android_client_info": {
+          "package_name": "com.anasbanat.bmi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "481104954711-frk2bg18ahglp59tsqlnptgr8077sfl3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVLpbPow-S7KdSwIcg1OlRBkZkDNJCTRI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "481104954711-frk2bg18ahglp59tsqlnptgr8077sfl3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

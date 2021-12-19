@@ -14,22 +14,21 @@
         android:layout_height="400dp"
         android:src="@drawable/login_icon"
         android:padding="50dp"/>
-    <TextView
-        android:id="@+id/next"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="bottom|right"
-        android:layout_margin="30dp"
-        android:clickable="true"
-        android:gravity="bottom|right"
-        android:text="Next"
-        android:hint="Next"
-        android:textColor="#fff"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        android:onClick="next"
-        android:cursorVisible="true"
-        >
-        <requestFocus/>
-    </TextView>
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:onClick="next"
+            android:layout_marginLeft="250dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"/>
+    </LinearLayout>
 </LinearLayout>

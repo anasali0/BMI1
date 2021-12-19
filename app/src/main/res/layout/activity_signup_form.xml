@@ -9,6 +9,7 @@
     android:padding="30dp"
     tools:context=".Signup_form">
     <TextView
+        android:id="@+id/banner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#3B96F1"
@@ -17,6 +18,7 @@
         android:gravity="center"
         android:textStyle="bold"/>
     <TextView
+        android:id="@+id/text1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#333"
@@ -24,6 +26,7 @@
         android:gravity="center"/>
 
     <com.google.android.material.textfield.TextInputLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:focusable="true"
@@ -31,10 +34,11 @@
         android:layout_marginTop="10dp"
         >
 
-        <com.google.android.material.textfield.TextInputEditText
+        <EditText
+            android:id="@+id/fullName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Name"
+            android:hint="Full Name"
             android:ems="10"
             android:inputType="text"
             android:textSize="15sp"/>
@@ -48,12 +52,13 @@
         android:layout_marginTop="10dp"
         >
 
-        <com.google.android.material.textfield.TextInputEditText
+        <EditText
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
             android:ems="10"
-            android:inputType="text"
+            android:inputType="textEmailAddress"
             android:textSize="15sp"/>
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -66,7 +71,8 @@
         app:passwordToggleEnabled="true"
         >
 
-        <com.google.android.material.textfield.TextInputEditText
+        <EditText
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
@@ -83,7 +89,8 @@
         android:layout_marginTop="10dp"
         >
 
-        <com.google.android.material.textfield.TextInputEditText
+        <EditText
+            android:id="@+id/rePassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Confirm Password"
@@ -91,30 +98,9 @@
             android:inputType="textPassword"
             android:textSize="15sp"/>
     </com.google.android.material.textfield.TextInputLayout>
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Gender: "
-            android:textSize="17sp"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Male"
-            android:layout_marginLeft="10dp"
-            android:textSize="17sp"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:text="Female"
-            android:textSize="17sp"/>
-    </RadioGroup>
+
     <Button
+        android:id="@+id/register_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Create"
@@ -137,13 +123,12 @@
             android:textSize="20sp" />
 
         <TextView
+            android:id="@+id/login"
             android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:onClick="btn_loginForm"
             android:text="Login"
             android:textColor="#3B96F1"
-            android:textSize="20sp"
-            tools:ignore="OnClick" />
+            android:textSize="20sp" />
     </LinearLayout>
 </LinearLayout>

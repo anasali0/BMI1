@@ -32,11 +32,13 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <RadioButton
+                android:id="@+id/male"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Male"
                 android:textSize="20sp"/>
             <RadioButton
+                android:id="@+id/female"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Female"
@@ -53,49 +55,38 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center"
+        android:weightSum="2">
 
         <TextView
-            android:layout_width="150dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="0.6"
             android:text="Weight"
-            android:textSize="25sp"
+            android:textSize="18sp"
+            android:textStyle="bold"
             android:gravity="center"
             />
-
-        <Button
-            android:id="@+id/decrease"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:onClick="decreaseInteger"
-            android:text="-"
-            android:textSize="15sp"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:id="@+id/integer_number"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:text="0"
-            android:textStyle="bold"
-            android:textSize="30sp" />
-
-        <Button
-            android:id="@+id/increase"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:onClick="increaseInteger"
-            android:text="+"
-            android:textSize="15sp"
-            android:textStyle="bold"/>
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/info_weight"
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="30dp"
+            android:elevation="10dp"
+            android:textSize="22sp"
+            app:backGroundColor="#eee"
+            app:textColor="@android:color/black"
+            >
+        </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight=".3"
             android:text="kg"
-            android:layout_marginLeft="5dp"
+            android:paddingStart="12dp"
             android:textSize="20sp"
             />
     </LinearLayout>
@@ -104,45 +95,38 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center"
+        android:weightSum="2">
 
         <TextView
-            android:layout_width="150dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Height"
-            android:textSize="25sp"
+            android:layout_weight="0.6"
+            android:text="Length"
+            android:textSize="18sp"
+            android:textStyle="bold"
             android:gravity="center"
             />
-        <Button
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:onClick="decreaseInteger"
-            android:text="-"
-            android:textSize="15sp"
-            android:textStyle="bold"/>
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/info_length"
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="30dp"
+            android:elevation="10dp"
+            android:textSize="22sp"
+            app:backGroundColor="#eee"
+            app:textColor="@android:color/black"
+            >
+        </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:text="0"
-            android:textStyle="bold"
-            android:textSize="30sp" />
-
-        <Button
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:onClick="increaseInteger"
-            android:text="+"
-            android:textSize="15sp"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_weight=".3"
             android:text="cm"
-            android:layout_marginLeft="5dp"
+            android:paddingStart="12dp"
             android:textSize="20sp"
             />
     </LinearLayout>
@@ -162,19 +146,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="DD/MM/YYYY"
             android:inputType="date"
-            android:focusable="false"
             />
     </LinearLayout>
 
     <Button
+        android:id="@+id/save_data"
         android:layout_width="280dp"
         android:layout_height="60dp"
         android:layout_marginTop="40dp"
         android:textSize="20sp"
         android:layout_gravity="center"
         android:text="Save Data"
+        android:onClick="saveData"
         />
 
 </LinearLayout>

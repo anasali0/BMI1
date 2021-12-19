@@ -10,9 +10,7 @@ import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
-    private final long TIME_MS = 5000;
-    private CountDownTimer counter;
+public class MainActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,5 +22,4 @@ public class MainActivity extends AppCompatActivity {
     public void next(View view) {
         startActivity(new Intent(getApplicationContext(), Login_form.class));
     }
-
 }

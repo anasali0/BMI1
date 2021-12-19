@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">BMI Analyzer</string>
+    <string name="add_name">Enter your name!</string>
+    <string name="add_email">Enter your email!</string>
+    <string name="add_password">Enter your password!</string>
+    <string name="add_rePassword">Enter your password again!</string>
+    <string name="check_password">Check your password!</string>
+    <string name="account_found">This email already have an account!</string>
+    <string name="register_successfully">Register Successfully</string>
+    <string name="add_date">Enter your date of birth!</string>
 </resources>
